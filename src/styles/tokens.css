@@ -1,0 +1,111 @@
+/**
+ * ui-engine design tokens.
+ * Override any of these custom properties in your own CSS to re-theme every
+ * component, or flip the `data-theme` attribute on a container to switch
+ * between the light and dark sets below.
+ */
+:root {
+  /* Color: neutral scale */
+  --ui-color-bg: #ffffff;
+  --ui-color-bg-subtle: #f6f7f9;
+  --ui-color-bg-inset: #eceef1;
+  --ui-color-border: #d9dce1;
+  --ui-color-border-strong: #b7bcc4;
+  --ui-color-text: #16181d;
+  --ui-color-text-muted: #5c6270;
+  --ui-color-text-inverse: #ffffff;
+
+  /* Color: brand / accent */
+  --ui-color-accent: #3b5bfd;
+  --ui-color-accent-hover: #2e49d6;
+  --ui-color-accent-active: #253bb0;
+  --ui-color-accent-text: #ffffff;
+  --ui-color-accent-subtle: #e8ecff;
+
+  /* Color: semantic */
+  --ui-color-danger: #e5484d;
+  --ui-color-danger-hover: #cf3d42;
+  --ui-color-danger-subtle: #fde9e9;
+  --ui-color-success: #2f9e58;
+  --ui-color-success-subtle: #e6f6ec;
+  --ui-color-warning: #b5670a;
+  --ui-color-warning-subtle: #fdf1e0;
+
+  /* Overlay */
+  --ui-color-overlay: rgb(15 17 21 / 45%);
+
+  /* Typography */
+  --ui-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  --ui-font-size-xs: 0.75rem;
+  --ui-font-size-sm: 0.875rem;
+  --ui-font-size-md: 1rem;
+  --ui-font-size-lg: 1.125rem;
+  --ui-font-weight-regular: 400;
+  --ui-font-weight-medium: 500;
+  --ui-font-weight-semibold: 600;
+  --ui-line-height: 1.5;
+
+  /* Spacing scale */
+  --ui-space-1: 0.25rem;
+  --ui-space-2: 0.5rem;
+  --ui-space-3: 0.75rem;
+  --ui-space-4: 1rem;
+  --ui-space-5: 1.5rem;
+  --ui-space-6: 2rem;
+
+  /* Radius */
+  --ui-radius-sm: 4px;
+  --ui-radius-md: 6px;
+  --ui-radius-lg: 10px;
+  --ui-radius-full: 9999px;
+
+  /* Shadow */
+  --ui-shadow-sm: 0 1px 2px rgb(0 0 0 / 6%);
+  --ui-shadow-md: 0 4px 12px rgb(0 0 0 / 10%);
+  --ui-shadow-lg: 0 12px 32px rgb(0 0 0 / 16%);
+
+  /* Focus ring */
+  --ui-focus-ring: 0 0 0 3px var(--ui-color-accent-subtle), 0 0 0 1px
+    var(--ui-color-accent);
+
+  /* Motion */
+  --ui-transition-fast: 120ms ease;
+  --ui-transition-base: 180ms ease;
+
+  /* Z-index scale for overlay components */
+  --ui-z-overlay: 50;
+  --ui-z-popover: 60;
+  --ui-z-toast: 70;
+}
+
+[data-theme="dark"] {
+  --ui-color-bg: #16181d;
+  --ui-color-bg-subtle: #1d2027;
+  --ui-color-bg-inset: #262a33;
+  --ui-color-border: #343945;
+  --ui-color-border-strong: #454b59;
+  --ui-color-text: #f3f4f6;
+  --ui-color-text-muted: #9aa1b1;
+  --ui-color-text-inverse: #16181d;
+
+  --ui-color-accent: #7b93ff;
+  --ui-color-accent-hover: #94a8ff;
+  --ui-color-accent-active: #aab8ff;
+  --ui-color-accent-text: #0d1130;
+  --ui-color-accent-subtle: #232a52;
+
+  --ui-color-danger: #ff6369;
+  --ui-color-danger-hover: #ff8388;
+  --ui-color-danger-subtle: #3b1e20;
+  --ui-color-success: #4cc274;
+  --ui-color-success-subtle: #143523;
+  --ui-color-warning: #e2984a;
+  --ui-color-warning-subtle: #3a2a10;
+
+  --ui-color-overlay: rgb(0 0 0 / 60%);
+
+  --ui-shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+  --ui-shadow-md: 0 4px 12px rgb(0 0 0 / 45%);
+  --ui-shadow-lg: 0 12px 32px rgb(0 0 0 / 55%);
+}

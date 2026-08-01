@@ -1,0 +1,25 @@
+.content {
+  padding: var(--ui-space-1) var(--ui-space-2);
+  background: var(--ui-color-text);
+  color: var(--ui-color-bg);
+  border-radius: var(--ui-radius-sm);
+  font-size: var(--ui-font-size-xs);
+  box-shadow: var(--ui-shadow-md);
+  z-index: var(--ui-z-popover);
+  animation: ui-tooltip-fade-in var(--ui-transition-fast);
+}
+
+.arrow {
+  fill: var(--ui-color-text);
+}
+
+@keyframes ui-tooltip-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

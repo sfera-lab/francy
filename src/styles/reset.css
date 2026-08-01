@@ -1,0 +1,29 @@
+/**
+ * Minimal reset scoped to ui-engine component roots only (elements carrying
+ * `data-ui-root`) — it never touches global element defaults, so it's safe
+ * to import alongside any consumer stylesheet or framework.
+ */
+[data-ui-root],
+[data-ui-root] * {
+  box-sizing: border-box;
+}
+
+[data-ui-root] {
+  font-family: var(--ui-font-family);
+  color: var(--ui-color-text);
+  line-height: var(--ui-line-height);
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-ui-root] button,
+[data-ui-root] input,
+[data-ui-root] textarea,
+[data-ui-root] select {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+[data-ui-root]:focus-visible {
+  outline: none;
+}

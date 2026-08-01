@@ -1,0 +1,16 @@
+.root {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: var(--ui-radius-full);
+  background: var(--ui-color-bg-inset);
+}
+
+.indicator {
+  width: 100%;
+  height: 100%;
+  background: var(--ui-color-accent);
+  border-radius: var(--ui-radius-full);
+  transition: transform var(--ui-transition-base);
+}

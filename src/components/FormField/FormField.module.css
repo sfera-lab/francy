@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-space-1);
+}
+
+.error {
+  margin: 0;
+  font-size: var(--ui-font-size-xs);
+  color: var(--ui-color-danger);
+}
+
+.hint {
+  margin: 0;
+  font-size: var(--ui-font-size-xs);
+  color: var(--ui-color-text-muted);
+}

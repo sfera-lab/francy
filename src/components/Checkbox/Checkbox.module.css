@@ -1,0 +1,39 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  background: var(--ui-color-bg);
+  border: 1px solid var(--ui-color-border-strong);
+  border-radius: var(--ui-radius-sm);
+  cursor: pointer;
+  transition: background-color var(--ui-transition-fast),
+    border-color var(--ui-transition-fast);
+}
+
+.root:hover {
+  border-color: var(--ui-color-accent);
+}
+
+.root:focus-visible {
+  outline: none;
+  box-shadow: var(--ui-focus-ring);
+}
+
+.root[data-state="checked"] {
+  background: var(--ui-color-accent);
+  border-color: var(--ui-color-accent);
+  color: var(--ui-color-accent-text);
+}
+
+.root[data-disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

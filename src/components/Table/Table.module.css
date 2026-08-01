@@ -1,0 +1,35 @@
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.root {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--ui-font-size-sm);
+}
+
+.header {
+  border-bottom: 1px solid var(--ui-color-border);
+}
+
+.body .row {
+  border-bottom: 1px solid var(--ui-color-border);
+}
+
+.body .row:last-child {
+  border-bottom: none;
+}
+
+.head {
+  padding: var(--ui-space-3);
+  text-align: left;
+  font-weight: var(--ui-font-weight-medium);
+  color: var(--ui-color-text-muted);
+  white-space: nowrap;
+}
+
+.cell {
+  padding: var(--ui-space-3);
+  color: var(--ui-color-text);
+}
