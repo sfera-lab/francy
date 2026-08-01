@@ -1,0 +1,61 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Introduction" />
+
+# ui-engine
+
+A generic React component library built on [Radix UI](https://www.radix-ui.com/) primitives, with a default visual theme driven entirely by CSS custom properties. Behavior (accessibility, keyboard nav, focus management) comes from Radix; appearance is a thin, fully-overridable layer on top — no Tailwind or CSS framework required in your app.
+
+Every page in this sidebar is a **live, interactive example** — not a screenshot. Use the Controls panel below each example to change props in real time, and the theme toggle in the toolbar above to preview light/dark mode.
+
+## Install
+
+```sh
+npm install ui-engine
+```
+
+## Usage
+
+```tsx
+import { Button, Dialog, DialogContent, DialogTrigger } from "ui-engine";
+import "ui-engine/styles.css";
+
+function Example() {
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button>Open</Button>
+      </DialogTrigger>
+      <DialogContent>...</DialogContent>
+    </Dialog>
+  );
+}
+```
+
+## Theming
+
+Every visual value is a CSS custom property defined in `ui-engine/styles.css` under `:root` (light) and `[data-theme="dark"]` (dark). Override any subset in your own stylesheet, or toggle themes by setting `data-theme="dark"` on a container:
+
+```css
+:root {
+  --ui-color-accent: #7c3aed;
+}
+```
+
+```tsx
+<div data-theme="dark">{/* renders with the dark palette */}</div>
+```
+
+Every component also accepts `className` and `style`, so you can override or extend styling per-instance without fighting the library's CSS.
+
+## Components
+
+- **Form**: Button, Input, Textarea, Label, Checkbox, RadioGroup, Select, Switch, FormField
+- **Layout & overlay**: Dialog, Drawer, Tabs, Accordion, Tooltip, Popover, DropdownMenu
+- **Feedback & data**: Toast, Badge, Card, Table, Avatar, Progress, Spinner
+
+Browse them in the sidebar on the left — each one has its own live docs page.
+
+## Source
+
+[github.com/sfera-lab/francy](https://github.com/sfera-lab/francy)
